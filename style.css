@@ -1,9 +1,17 @@
 * {
     font-family: 'roboto', sans-serif;
     margin: 1px;
-    text-transform: capitalize;    
+    background-color: #fefefe;
+
 }
 
 header {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main{ display: inline;
+
 }

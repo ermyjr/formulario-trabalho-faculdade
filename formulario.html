@@ -32,7 +32,9 @@
               placeholder="Digite seu nome"
               required
             />
+          </article>
 
+          <article>
             <label for="cpf">Cpf:</label>
             <input
               type="text"
@@ -41,7 +43,9 @@
               placeholder="XXX.XXX.XXX-XX"
               required
             />
+          </article>
 
+          <article>
             <label for="email">E-mail</label>
             <input
               type="email"
@@ -49,16 +53,24 @@
               placeholder="Seu melhor E-mail"
               required
             />
+          </article>
 
+          <article>
             <label for="endereco">Endereço:</label>
             <input type="text" id="endereco" placeholder="Sua Rua" required />
+          </article>
 
+          <article>
             <label for="bairro">Bairro:</label>
             <input type="text" id="bairro" placeholder="Seu Bairro" required />
+          </article>
 
+          <article>
             <label for="city">Cidade:</label>
             <input type="text" id="city" placeholder="Sua Cidade" required />
+          </article>
 
+          <article>
             <label for="cep">Cep:</label>
             <input
               type="text"
@@ -67,7 +79,9 @@
               placeholder="XXXXX-XX"
               required
             />
+          </article>
 
+          <article>
             <label for="country">UF</label>
             <select id="country" required>
               <option value="ba">BA</option>
@@ -75,7 +89,9 @@
               <option value="rj">RJ</option>
               <option value="ms">MS</option>
             </select>
+          </article>
 
+          <article>
             <label for="tel">Telefone:</label>
             <input
               type="text"
@@ -84,16 +100,21 @@
               placeholder="(XX) XXXX-XXXX"
               required
             />
+          </article>
 
+          <article>
             <label for="date">Data de Nascimento:</label>
             <input type="date" name="data" required />
+          </article>
 
-            <input type="radio" id="genero" value="masculino" required />
+          <article>
+            <input type="radio" id="genero" value="masculino" name="genero" />
             <label for="genero">M</label>
-            <br />
-            <input type="radio" id="genero" value="feminino" required />
+            <input type="radio" id="genero" value="feminino" name="genero" />
             <label for="genero">F</label>
+          </article>
 
+          <article>
             <label for="phone">cel:</label>
             <input
               type="text"
@@ -102,7 +123,9 @@
               placeholder="(XX) XXXXX-XXXX"
               required
             />
+          </article>
 
+          <article>
             <label for="civil">estado civil:</label>
             <select id="civil">
               <option value="solteiro">Solteiro</option>
@@ -110,18 +133,28 @@
               <option value="divorciado">Divorciado</option>
               <option value="viuvo">Viuvo</option>
             </select>
+          </article>
 
+          <article>
             <label for="login">login:</label>
             <input type="text" id="login" placeholder="Seu Login" />
+          </article>
 
+          <article>
             <label for="password">senha:</label>
             <input type="password" id="password" placeholder="Sua Senha" />
           </article>
 
-          <article>
-            <h4>
-              Deseja receber informações sobre os seguintes assuntos abaixo:
-            </h4>
+        </form>
+      </section>
+
+      <section>
+          <h4>
+            Deseja receber informações sobre os seguintes assuntos abaixo:
+          </h4>
+
+        <article>
+          <form autocomplete="on">
             <input type="checkbox" id="tecnologia" class="option" />
             <label for="tecnologia">Tecnologia </label>
 
@@ -163,16 +196,18 @@
 
             <input type="checkbox" id="moda" class="option" />
             <label for="moda">Moda e Estilo</label>
-          </article>
+          </form>
+        </article>
+      </section>
 
-          <article>
-            <input type="checkbox" id="rules" class="option" />
-            <label for="rules"
-              >Li as regras de cadastro e autorizo a criação de usuário</label
-            >
-            <input type="submit" value="enviar" />
-            <input type="submit" value="retornar" />
-          </article>
+      <section>
+        <form autocomplete="on">
+          <input type="checkbox" id="rules" class="option" />
+          <label for="rules"
+            >Li as regras de cadastro e autorizo a criação de usuário</label
+          >
+          <input type="submit" value="enviar" />
+          <input type="submit" value="retornar" />
         </form>
       </section>
     </main>
