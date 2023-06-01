@@ -10,10 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="estilo.css" />
     <script src="caminho-para-inputmask/jquery.inputmask.min.js"></script>
     <link rel="stylesheet" href="caminho-para-inputmask/inputmask.min.css" />
 
-    <link rel="stylesheet" href="style.css" />
+
     <title>Check-out Módulo 2 - WEB</title>
   </head>
   <body>
@@ -23,7 +24,7 @@
     <main>
       <section>
         <legend><h3>Formulário</h3></legend>
-        <form autocomplete="on">
+        <form autocomplete="on" method="post" action="cadastro.html">      
           <article>
             <label for="name">Nome completo:</label>
             <input
@@ -144,60 +145,61 @@
             <label for="password">senha:</label>
             <input type="password" id="password" placeholder="Sua Senha" />
           </article>
-
         </form>
       </section>
 
-      <section>
-          <h4>
-            Deseja receber informações sobre os seguintes assuntos abaixo:
-          </h4>
+      <section class="checkbox">
+        <h4>Deseja receber informações sobre os seguintes assuntos abaixo:</h4>
 
-        <article>
-          <form autocomplete="on">
-            <input type="checkbox" id="tecnologia" class="option" />
-            <label for="tecnologia">Tecnologia </label>
+        <section class="select">
+          <form autocomplete="on" method="post" action="cadastro.html">
+            <article>
+              <input type="checkbox" id="tecnologia" class="option" />
+              <label for="tecnologia">Tecnologia </label>
+            </article>
 
+            <article>
             <input type="checkbox" id="esportes" class="option" />
             <label for="esportes">Esportes</label>
+          </article>
 
-            <input type="checkbox" id="automoveis" class="option" />
-            <label for="automoveis">Automóveis</label>
+          <article><input type="checkbox" id="automoveis" class="option" />
+            <label for="automoveis">Automóveis</label></article>
 
-            <input type="checkbox" id="culinaria" class="option" />
-            <label for="culinaria">Culinária</label>
+            <article></article><input type="checkbox" id="culinaria" class="option" />
+            <label for="culinaria">Culinária</label></article>
 
-            <input type="checkbox" id="politica" class="option" />
-            <label for="politica">Política</label>
+            <article></article><input type="checkbox" id="politica" class="option" />
+            <label for="politica">Política</label></article>
 
-            <input type="checkbox" id="policial" class="option" />
-            <label for="policial">Policial</label>
+            <article></article><input type="checkbox" id="policial" class="option" />
+            <label for="policial">Policial</label></article>
 
-            <input type="checkbox" id="tempo" class="option" />
-            <label for="tempo">Tempo</label>
+            <article></article><input type="checkbox" id="tempo" class="option" />
+            <label for="tempo">Tempo</label></article>
 
-            <input type="checkbox" id="cultura" class="option" />
-            <label for="cultura">Cultura</label>
+            <article></article><input type="checkbox" id="cultura" class="option" />
+            <label for="cultura">Cultura</label></article>
 
-            <input type="checkbox" id="economia" class="option" />
-            <label for="economia">Economia</label>
+            <article></article><input type="checkbox" id="economia" class="option" />
+            <label for="economia">Economia</label></article>
 
-            <input type="checkbox" id="jogos" class="option" />
-            <label for="jogos">Jogos</label>
+            <article></article><input type="checkbox" id="jogos" class="option" />
+            <label for="jogos">Jogos</label></article>
 
-            <input type="checkbox" id="educacao" class="option" />
-            <label for="educacao">Educação</label>
+            <article></article><input type="checkbox" id="educacao" class="option" />
+            <label for="educacao">Educação</label></article>
 
-            <input type="checkbox" id="viajem" class="option" />
-            <label for="viajem">Viajem</label>
+            <article></article><input type="checkbox" id="viajem" class="option" />
+            <label for="viajem">Viajem</label></article>
 
-            <input type="checkbox" id="empregos" class="option" />
-            <label for="empregos">Empregos</label>
+            <article></article><input type="checkbox" id="empregos" class="option" />
+            <label for="empregos">Empregos</label></article>
 
-            <input type="checkbox" id="moda" class="option" />
-            <label for="moda">Moda e Estilo</label>
+            <article><input type="checkbox" id="moda" class="option" />
+            <label for="moda">Moda e Estilo</label></article>
           </form>
-        </article>
+        </section>
       </section>
 
       <section>

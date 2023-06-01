@@ -1,6 +1,7 @@
 * {
     font-family: 'roboto', sans-serif;
     margin: 1px;
+    padding: 5px;
     background-color: #fefefe;
 
 }
@@ -9,9 +10,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
 }
 
-main{ display: inline;
+.select {
+    display: flex;
+    align-items: normal;
+    padding: 10px;
 
 }
