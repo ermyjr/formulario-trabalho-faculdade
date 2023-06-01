@@ -1,0 +1,9 @@
+* {
+    font-family: 'roboto', sans-serif;
+    margin: 1px;
+    text-transform: capitalize;    
+}
+
+header {
+    display: inline-block;
+}
