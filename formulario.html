@@ -20,10 +20,11 @@
     <header>
       <h1>Check-out de presença</h1>
     </header>
-    <main>
-      <section>
-        <legend><h3>Formulário</h3></legend>
+    <main> 
+      <section>   
         <form autocomplete="on" method="post" action="cadastro.html">
+          <legend><h3>Formulário</h3></legend>
+          <fieldset>
           <article>
             <label for="name">Nome completo:</label>
             <input
@@ -144,10 +145,10 @@
             <label for="password">senha:</label>
             <input type="password" id="password" placeholder="Sua Senha" />
           </article>
-        </form>
-      </section>
+        </fieldset>
+     
 
-      <section class="checkbox">
+       <fieldset class="checkbox">
         <h4>Deseja receber informações sobre os seguintes assuntos abaixo:</h4>
 
         <section class="select">
@@ -223,9 +224,9 @@
             </article>
           </form>
         </section>
-      </section>
+      </fieldset>
 
-      <section>
+      <fieldset>
         <form autocomplete="on">
           <input type="checkbox" id="rules" class="option" />
           <label for="rules"
@@ -235,6 +236,7 @@
           <input type="submit" value="retornar" />
 
         </form>
+      </fieldset>
       </section>
     </main>
   </body>

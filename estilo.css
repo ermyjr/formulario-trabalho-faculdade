@@ -1,7 +1,8 @@
 * {
     font-family: 'roboto', sans-serif;
-    margin: 1px;
-    padding: 5px;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
     background-color: #fefefe;
 
 }
@@ -13,9 +14,24 @@ header {
     
 }
 
+main {
+    font-size: 20px;
+    font-weight: 300;
+    padding: px;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-around;
+    text-align: justify;
+
+
+}
 .select {
     display: flex;
     align-items: normal;
-    padding: 10px;
+    margin: 10px;
 
+}
+
+article{
+    margin: 5px;
 }
