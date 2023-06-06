@@ -1,10 +1,10 @@
-var cpfInput = document.getElementById('cpf');
+const cpfInput = document.getElementById('cpf');
 
 cpfInput.addEventListener('input', formatarCPF);
 
 function formatarCPF() {
 
-  var cpf = cpfInput.value;
+  const cpf = cpfInput.value;
 
   cpf = cpf.replace(/\D/g, '');
 
@@ -23,21 +23,21 @@ function formatarCPF() {
 
 
 function getCpfSemFormatacao() {
-  var cpfSemFormatacao = cpfInput.value.replace(/\D/g, '');
+  const cpfSemFormatacao = cpfInput.value.replace(/\D/g, '');
   return cpfSemFormatacao;
 }
 
 
-var formulario = document.querySelector('form');
+const formulario = document.querySelector('form');
 formulario.addEventListener('submit', function (event) {
-  var cpfSemFormatacao = getCpfSemFormatacao();
+  const cpfSemFormatacao = getCpfSemFormatacao();
   console.log('CPF sem formatação:', cpfSemFormatacao);
 
 });
 
 
-var telefoneInput = document.getElementById('tel');
-var celularInput = document.getElementById('phone');
+const telefoneInput = document.getElementById('tel');
+const celularInput = document.getElementById('phone');
 
 
 telefoneInput.addEventListener('input', formatarTelefone);
@@ -45,7 +45,7 @@ celularInput.addEventListener('input', formatarCelular);
 
 
 function formatarTelefone() {
-  var telefone = telefoneInput.value;
+  const telefone = telefoneInput.value;
   telefone = telefone.replace(/\D/g, ''); // Remover caracteres não numéricos
   telefone = telefone.replace(/^(\d{2})(\d{4})(\d{4})$/, '($1) $2-$3'); // Aplicar a formatação (xx) xxxx-xxxx
   telefoneInput.value = telefone;
@@ -53,7 +53,7 @@ function formatarTelefone() {
 
 // Função para formatar o valor do celular
 function formatarCelular() {
-  var celular = celularInput.value;
+  const celular = celularInput.value;
   celular = celular.replace(/\D/g, ''); // Remover caracteres não numéricos
   celular = celular.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3'); // Aplicar a formatação (xx) xxxxx-xxxx
   celularInput.value = celular;
@@ -61,21 +61,21 @@ function formatarCelular() {
 
 // Obter o valor do telefone sem formatação para enviar ao banco de dados
 function getTelefoneSemFormatacao() {
-  var telefoneSemFormatacao = telefoneInput.value.replace(/\D/g, '');
+  const telefoneSemFormatacao = telefoneInput.value.replace(/\D/g, '');
   return telefoneSemFormatacao;
 }
 
 // Obter o valor do celular sem formatação para enviar ao banco de dados
 function getCelularSemFormatacao() {
-  var celularSemFormatacao = celularInput.value.replace(/\D/g, '');
+  const celularSemFormatacao = celularInput.value.replace(/\D/g, '');
   return celularSemFormatacao;
 }
 
 
-var formulario = document.querySelector('form');
+const formulario = document.querySelector('form');
 formulario.addEventListener('submit', function (event) {
-  var telefoneSemFormatacao = getTelefoneSemFormatacao();
-  var celularSemFormatacao = getCelularSemFormatacao();
+  const telefoneSemFormatacao = getTelefoneSemFormatacao();
+  const celularSemFormatacao = getCelularSemFormatacao();
   console.log('Telefone sem formatação:', telefoneSemFormatacao);
   console.log('Celular sem formatação:', celularSemFormatacao);
  
@@ -84,16 +84,16 @@ formulario.addEventListener('submit', function (event) {
 // Função para validar o formulário
 function validarFormulario() {
     // Obter referência para o formulário
-    var formulario = document.querySelector('form');
+    const formulario = document.querySelector('form');
   
     // Obter todos os campos obrigatórios, exceto os de checkbox no segundo fieldset
-    var camposObrigatorios = formulario.querySelectorAll(
+    const camposObrigatorios = formulario.querySelectorAll(
       'input[required]:not(fieldset.checkbox input[type="checkbox"])'
     );
   
     // Validar os campos obrigatórios
-    for (var i = 0; i < camposObrigatorios.length; i++) {
-      var campo = camposObrigatorios[i];
+    for (const i = 0; i < camposObrigatorios.length; i++) {
+      const campo = camposObrigatorios[i];
   
       // Verificar se o campo está vazio
       if (campo.value.trim() === '') {
@@ -111,7 +111,7 @@ function validarFormulario() {
   }
   
   // Adicionar evento de submit ao formulário
-  var formulario = document.querySelector('form');
+  const formulario = document.querySelector('form');
   formulario.addEventListener('submit', function (event) {
     // Chamar a função de validação do formulário
     if (!validarFormulario()) {
