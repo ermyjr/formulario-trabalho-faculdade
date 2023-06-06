@@ -1,4 +1,11 @@
 /* Estilização básica */
+*{
+  margin: 0;
+  padding: auto;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -98,6 +105,15 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
+  }
+
+  .align-inline {
+    display: flex;
+    align-items: center;
+  }
+  
+  .align-inline input[type="checkbox"] {
+    margin-right: 1px;
   }
   
   /* Estilização responsiva para dispositivos móveis */
