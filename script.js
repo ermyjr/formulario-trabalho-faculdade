@@ -83,7 +83,6 @@ formulario.addEventListener('submit', function (event) {
 
 // Função para validar o formulário
 function validarFormulario() {
-    // Obter referência para o formulário
     const formulario = document.querySelector('form');
   
     // Obter todos os campos obrigatórios, exceto os de checkbox no segundo fieldset
@@ -97,11 +96,8 @@ function validarFormulario() {
   
       // Verificar se o campo está vazio
       if (campo.value.trim() === '') {
-        // Adicionar classe de erro ao campo
         campo.classList.add('erro');
-        // Exibir uma mensagem de erro (pode ser personalizada)
         alert('Preencha todos os campos obrigatórios.');
-        // Impedir o envio do formulário
         return false;
       }
     }
@@ -113,9 +109,8 @@ function validarFormulario() {
   // Adicionar evento de submit ao formulário
   const formulario = document.querySelector('form');
   formulario.addEventListener('submit', function (event) {
-    // Chamar a função de validação do formulário
+  
     if (!validarFormulario()) {
-      // Impedir o envio do formulário caso a validação falhe
       event.preventDefault();
     }
   });
