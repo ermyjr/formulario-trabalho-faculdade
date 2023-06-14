@@ -46,16 +46,16 @@ celularInput.addEventListener('input', formatarCelular);
 
 function formatarTelefone() {
   const telefone = telefoneInput.value;
-  telefone = telefone.replace(/\D/g, ''); // Remover caracteres não numéricos
-  telefone = telefone.replace(/^(\d{2})(\d{4})(\d{4})$/, '($1) $2-$3'); // Aplicar a formatação (xx) xxxx-xxxx
+  telefone = telefone.replace(/\D/g, ''); // Remover caracteres 
+  telefone = telefone.replace(/^(\d{2})(\d{4})(\d{4})$/, '($1) $2-$3'); // formatação (xx) xxxx-xxxx
   telefoneInput.value = telefone;
 }
 
 // Função para formatar o valor do celular
 function formatarCelular() {
   const celular = celularInput.value;
-  celular = celular.replace(/\D/g, ''); // Remover caracteres não numéricos
-  celular = celular.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3'); // Aplicar a formatação (xx) xxxxx-xxxx
+  celular = celular.replace(/\D/g, ''); // Remover caracteres
+  celular = celular.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3'); // formatação (xx) xxxxx-xxxx
   celularInput.value = celular;
 }
 
@@ -85,16 +85,16 @@ formulario.addEventListener('submit', function (event) {
 function validarFormulario() {
     const formulario = document.querySelector('form');
   
-    // Obter todos os campos obrigatórios, exceto os de checkbox no segundo fieldset
+    
     const camposObrigatorios = formulario.querySelectorAll(
       'input[required]:not(fieldset.checkbox input[type="checkbox"])'
     );
   
-    // Validar os campos obrigatórios
+    
     for (const i = 0; i < camposObrigatorios.length; i++) {
       const campo = camposObrigatorios[i];
   
-      // Verificar se o campo está vazio
+    
       if (campo.value.trim() === '') {
         campo.classList.add('erro');
         alert('Preencha todos os campos obrigatórios.');
@@ -102,7 +102,7 @@ function validarFormulario() {
       }
     }
   
-    // Permitir o envio do formulário caso todos os campos estejam preenchidos
+    
     return true;
   }
   

@@ -24,7 +24,11 @@
       <section>
         <form autocomplete="on" method="post" action="cadastro.html">
           <fieldset>
-            <legend><h3>Formulário</h3></legend>
+
+            <legend>
+              <h3>Formulário</h3>
+            </legend>
+   
             <article>
               <label for="name">Nome completo:</label>
               <input
@@ -34,7 +38,6 @@
                 required
               />
             </article>
-
             <article>
               <label for="cpf">CPF:</label>
               <input
@@ -44,7 +47,6 @@
                 required
               />
             </article>
-
             <article>
               <label for="email">E-mail:</label>
               <input
@@ -54,12 +56,10 @@
                 required
               />
             </article>
-
             <article>
               <label for="endereco">Endereço:</label>
               <input type="text" id="endereco" placeholder="Sua Rua" required />
             </article>
-
             <article>
               <label for="bairro">Bairro:</label>
               <input
@@ -69,12 +69,10 @@
                 required
               />
             </article>
-
             <article>
               <label for="city">Cidade:</label>
               <input type="text" id="city" placeholder="Sua Cidade" required />
             </article>
-
             <article>
               <label for="cep">CEP:</label>
               <input
@@ -85,7 +83,6 @@
                 required
               />
             </article>
-
             <article>
               <label for="country">UF:</label>
               <select id="country" required>
@@ -95,7 +92,6 @@
                 <option value="ms">MS</option>
               </select>
             </article>
-
             <article>
               <label for="tel">Telefone:</label>
               <input
@@ -106,12 +102,10 @@
                 required
               />
             </article>
-
             <article>
               <label for="date">Data de Nascimento:</label>
               <input type="date" name="data" required />
             </article>
-
             <article class="gender">
               <label>Gênero:</label>
               <input
@@ -129,7 +123,6 @@
               />
               <label for="genero-feminino">F</label>
             </article>
-
             <article>
               <label for="phone">Celular:</label>
               <input
@@ -140,7 +133,6 @@
                 required
               />
             </article>
-
             <article>
               <label for="civil">Estado Civil:</label>
               <select id="civil">
@@ -150,61 +142,52 @@
                 <option value="viuvo">Viúvo</option>
               </select>
             </article>
-
             <article>
               <label for="login">Login:</label>
               <input type="text" id="login" placeholder="Seu Login" />
             </article>
-
             <article>
               <label for="password">Senha:</label>
               <input type="password" id="password" placeholder="Sua Senha" />
             </article>
           </fieldset>
-
+          
           <fieldset class="checkbox">
+  
             <legend>
               <h4>
                 Deseja receber informações sobre os seguintes assuntos abaixo:
               </h4>
             </legend>
-
             <section class="select">
               <article>
                 <input type="checkbox" id="tecnologia" class="option" />
                 <label for="tecnologia">Tecnologia</label>
               </article>
-
               <article>
                 <input type="checkbox" id="esportes" class="option" />
                 <label for="esportes">Esportes</label>
               </article>
-
               <article>
                 <input type="checkbox" id="automoveis" class="option" />
                 <label for="automoveis">Automóveis</label>
               </article>
-
               <article>
                 <input type="checkbox" id="culinaria" class="option" />
                 <label for="culinaria">Culinária</label>
               </article>
-
               <article>
                 <input type="checkbox" id="politica" class="option" />
                 <label for="politica">Política</label>
               </article>
-
               <article>
                 <input type="checkbox" id="policial" class="option" />
                 <label for="policial">Policial</label>
               </article>
-
               <article>
                 <input type="checkbox" id="tempo" class="option" />
                 <label for="tempo">Tempo</label>
               </article>
-
               <article>
                 <input type="checkbox" id="cultura" class="option" />
                 <label for="cultura">Cultura</label>
@@ -235,6 +218,7 @@
               </article>
             </section>
           </fieldset>
+
           <fieldset>
             <article class="align-inline">
               <input type="checkbox" id="rules" class="option" />
@@ -243,6 +227,7 @@
             <input type="submit" value="enviar" />
             <input type="submit" value="retornar" />
           </fieldset>
+
         </form>
       </section>
     </main>
